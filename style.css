@@ -1,0 +1,197 @@
+body {
+  background-image: url('./blue_ocean.jpg');
+  background-size: auto;
+    background-repeat: round;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#mainDiv {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  margin-top: 5%;
+  color: black;
+}
+.dueDate, .edit, .done {
+  padding: 5%;
+}
+
+.toDoItem{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: stretch;
+  border-bottom: 1px solid silver;
+  font-size: 1.5em;
+}
+
+.toDoItem:first-child {
+  border-top: 1px solid silver;
+}
+
+.editbtn {
+  border: none;
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.listDiv, #addList {
+  background-color: powderblue;
+  opacity: 0.7;
+  border-radius: 15px
+}
+
+
+.listItem {
+  background-color: transparent;
+  padding: 2%;
+  border: none;
+
+  text-align: left;
+  align-items: stretch;
+}
+
+.projectBtn {
+  float: left;
+  margin: 1%;
+  border: none;
+  font-size: 1.25em;
+  border-radius: 5px;
+  background-color: deepskyblue;
+}
+
+ h2 {
+   font-size: 2.5em;
+ }
+
+ input {
+   border-bottom: 3px solid deepskyblue;
+   border-top:none;
+   border-left: none;
+   border-right: none;
+   background-color: inherit;
+   font-size: inherit;
+   text-align: center;
+ }
+
+ #addList {
+   font-size: 2em;
+   padding:2.5%;
+   font-weight: bold;
+ }
+
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+}
+
+.HolyGrail-content {
+  flex: 1;
+  padding: 5%;
+
+}
+
+#currentProject {
+  color: white;
+}
+
+.HolyGrail-nav {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+  background-color: powderblue;
+  opacity: 0.8;
+  order: -1;
+  /* put the nav on the left */
+  padding: 5%;
+  border-radius: 25px
+}
+
+.HolyGrail,
+.HolyGrail-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.HolyGrail-nav {
+  order: -1;
+}
+
+footer {
+  padding: 2%;
+  background-color: silver;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+#priorityDiv{
+  display: flex;
+  justify-content: space-around;
+}
+.priority {
+  border: none;
+  background-color: powderblue;
+  font-size: 1.25em;
+  border-radius: 5px;
+}
+
+.navListItem {
+  float: left;
+  margin: 1%;
+  border: none;
+  background-color: inherit;
+}
+
+#projectList, #container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: stretch;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.addTodo {
+  font-size: 1.5em;
+  border: none;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+
+    align-items: stretch;
+  }
+
+  .HolyGrail-body {
+    flex: 1;
+    min-width: 700px;
+    flex-direction: row;
+  }
+
+  .HolyGrail-content {
+    flex: 1;
+  }
+
+  .HolyGrail-nav {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}
